@@ -44,7 +44,6 @@ class IPScan:
         return self.ip_count < len(self.ip_list)
 
     def analyse(self):
-        #scan_url = API_URL + self.ip
         current_ip = self.ip_list[ self.ip_count ]
         self.ip_count += 1
         scan_url = API_URL + current_ip
